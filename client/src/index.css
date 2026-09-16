@@ -54,6 +54,11 @@ em { font-family: var(--sans); font-weight: 400; font-style: italic; letter-spac
 .button-dark:hover { background: var(--red); border-color: var(--red); }
 .hero-meta { position: absolute; z-index: 2; bottom: 34px; left: 4.5vw; right: 4.5vw; display: flex; justify-content: space-between; color: rgba(255,253,248,.7); }
 .hero-side-label { position: absolute; right: 31px; top: 50%; transform: rotate(90deg) translateX(50%); transform-origin: right center; color: rgba(255,253,248,.64); }
+.identification-strip { display: grid; grid-template-columns: 1.2fr 1.45fr .65fr 1.35fr 1.15fr; gap: 22px; align-items: center; padding: 19px 9vw; background: var(--red); color: var(--white); }
+.identification-label, .identification-item { display: flex; flex-direction: column; gap: 6px; }
+.identification-strip span { font-family: var(--mono); text-transform: uppercase; letter-spacing: .08em; font-size: 9px; color: rgba(255,253,248,.7); }
+.identification-strip strong { font-size: 12px; line-height: 1.15; letter-spacing: -.02em; font-weight: 500; }
+.identification-label strong { font-family: var(--display); font-size: 14px; letter-spacing: -.08em; }
 
 .section-pad { padding: 120px 9vw; }
 .section-kicker { display: flex; align-items: center; gap: 17px; color: var(--red); margin-bottom: 56px; }
@@ -101,6 +106,18 @@ p { font-size: 15px; line-height: 1.65; margin: 0 0 18px; color: var(--muted); }
 .red-card { background: var(--red); color: var(--white); }
 .red-card p, .red-card .card-index { color: rgba(255,253,248,.82); }
 .small-note { color: var(--muted); margin-top: 18px; text-transform: none; letter-spacing: 0; font-size: 10px; }
+.field-notes-section { background: var(--white); }
+.field-notes-heading { display: grid; grid-template-columns: 1fr .68fr; gap: 11vw; align-items: end; }
+.field-notes-heading h2 { max-width: 640px; }
+.field-notes-heading em { color: var(--red); }
+.field-notes-heading p { max-width: 410px; margin: 0; }
+.user-gallery { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: 16px; margin-top: 66px; align-items: start; }
+.user-photo { margin: 0; }
+.user-photo img { display: block; width: 100%; height: 295px; object-fit: cover; filter: saturate(.82); transition: filter .25s ease, transform .25s ease; }
+.user-photo:hover img { filter: saturate(1); transform: translateY(-4px); }
+.user-photo-large img { height: 405px; }
+.user-photo figcaption { display: flex; gap: 12px; align-items: center; padding-top: 13px; font-family: var(--mono); font-size: 9px; line-height: 1.35; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.user-photo figcaption span { color: var(--red); }
 
 .process-section { background: var(--ink); color: var(--white); }
 .process-heading { display: grid; grid-template-columns: 1fr .48fr; gap: 12vw; align-items: end; }
@@ -193,6 +210,7 @@ p { font-size: 15px; line-height: 1.65; margin: 0 0 18px; color: var(--muted); }
   .red-band-inner { grid-template-columns: 65px 1fr; }
   .red-band-inner p { grid-column: 2; }
   .community-copy { padding-right: 7vw; }
+  .identification-strip { padding-left: 7vw; padding-right: 7vw; grid-template-columns: 1.15fr 1.3fr .7fr 1.3fr 1fr; gap: 13px; }
 }
 
 @media (max-width: 700px) {
@@ -210,6 +228,9 @@ p { font-size: 15px; line-height: 1.65; margin: 0 0 18px; color: var(--muted); }
   .hero-side-label { display: none; }
   .hero-meta { font-size: 8px; }
   .hero-meta span:last-child { max-width: 160px; text-align: right; }
+  .identification-strip { grid-template-columns: 1fr 1fr; gap: 18px 14px; padding-top: 20px; padding-bottom: 20px; }
+  .identification-label { grid-column: 1 / -1; flex-direction: row; align-items: baseline; gap: 12px; }
+  .identification-label strong { font-size: 12px; }
   .section-pad { padding-top: 78px; padding-bottom: 78px; }
   .section-kicker { margin-bottom: 36px; font-size: 9px; }
   .intro-grid, .product-intro, .process-heading, .benefits-layout, .participation-grid, .sources-heading { display: block; }
@@ -227,6 +248,10 @@ p { font-size: 15px; line-height: 1.65; margin: 0 0 18px; color: var(--muted); }
   .red-band-inner p { margin-top: 28px; }
   .product-cards { display: block; margin-top: 45px; }
   .feature-card { min-height: 245px; margin-bottom: 12px; }
+  .field-notes-heading p { margin-top: 28px; }
+  .user-gallery { display: block; margin-top: 42px; }
+  .user-photo, .user-photo-large { margin-bottom: 31px; }
+  .user-photo img, .user-photo-large img { height: 260px; }
   .process-feature { display: block; margin-top: 43px; }
   .process-list { margin-top: 40px; }
   .process-image-wrap img { aspect-ratio: 1.2; }

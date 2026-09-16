@@ -19,6 +19,9 @@ import {
 const HERO_IMAGE = "/manus-storage/vans-hero_8f1f692a.jpg";
 const PROCESS_IMAGE = "/manus-storage/vans-process_326528e9.jpg";
 const COMMUNITY_IMAGE = "/manus-storage/vans-community_27bae507.jpg";
+const USER_STORE_FRONT = "/manus-storage/store-front_a6c55546.jpg";
+const USER_STORE_DISPLAY = "/manus-storage/store-display_a317bf8c.jpg";
+const USER_STORE_VISIT = "/manus-storage/store-visit_5e6013d5.jpg";
 
 const sourceLinks = [
   {
@@ -108,6 +111,14 @@ export default function Home() {
           <div className="hero-side-label">OFF THE WALL / SINCE 1966</div>
         </section>
 
+        <section className="identification-strip" aria-label="Datos de identificación académica">
+          <div className="identification-label"><span>Módulo / reto</span><strong>Creación de marca y posicionamiento<br />Reto 3 · El medio es el mensaje</strong></div>
+          <div className="identification-item"><span>Estudiante</span><strong>José Antonio Lorenzo Mora</strong></div>
+          <div className="identification-item"><span>Matrícula</span><strong>25023307</strong></div>
+          <div className="identification-item"><span>Asesor</span><strong>Mtro. Daniel Rivera Nieto</strong></div>
+          <div className="identification-item"><span>Fecha</span><strong>15 de septiembre de 2026</strong></div>
+        </section>
+
         <section className="intro-section section-pad" id="historia">
           <div className="section-kicker"><span>01</span><span>Una marca que nació cerca del usuario</span></div>
           <div className="intro-grid">
@@ -168,8 +179,18 @@ export default function Home() {
           <p className="small-note">Las características pueden variar por modelo, versión, temporada y país. Consulta siempre la ficha técnica del producto específico.</p>
         </section>
 
+        <section className="field-notes-section section-pad" id="registro-visual">
+          <div className="section-kicker"><span>04</span><span>Registro visual / visita del estudiante</span></div>
+          <div className="field-notes-heading"><h2>La marca también se observa <em>en el espacio real.</em></h2><p>Estas fotografías fueron proporcionadas por José Antonio Lorenzo Mora para documentar la experiencia de acercamiento a una tienda Vans: su fachada, su exhibición y la interacción con el espacio de venta.</p></div>
+          <div className="user-gallery">
+            <figure className="user-photo user-photo-large"><img src={USER_STORE_FRONT} alt="Fachada de una tienda Vans fotografiada por José Antonio Lorenzo Mora" /><figcaption><span>01</span> Fachada de tienda Vans · Archivo del estudiante</figcaption></figure>
+            <figure className="user-photo"><img src={USER_STORE_DISPLAY} alt="Exhibición de calzado Vans dentro de una tienda" /><figcaption><span>02</span> Exhibición de producto · Archivo del estudiante</figcaption></figure>
+            <figure className="user-photo"><img src={USER_STORE_VISIT} alt="Recorrido del estudiante frente a una exhibición de calzado Vans" /><figcaption><span>03</span> Recorrido de observación · Archivo del estudiante</figcaption></figure>
+          </div>
+        </section>
+
         <section className="process-section section-pad" id="proceso">
-          <div className="section-kicker light-kicker"><span>04</span><span>Proceso / materiales</span></div>
+          <div className="section-kicker light-kicker"><span>05</span><span>Proceso / materiales</span></div>
           <div className="process-heading">
             <h2>La suela waffle<br /><em>no apareció por accidente.</em></h2>
             <p>La fabricación convierte decisiones materiales en una experiencia que el usuario puede sentir en cada paso.</p>
@@ -186,7 +207,7 @@ export default function Home() {
         </section>
 
         <section className="benefits-section section-pad" id="beneficios">
-          <div className="section-kicker"><span>05</span><span>Beneficios / decisión informada</span></div>
+          <div className="section-kicker"><span>06</span><span>Beneficios / decisión informada</span></div>
           <div className="benefits-layout">
             <div>
               <h2>Lo que puede ofrecer.<br /><em>Lo que no promete.</em></h2>
@@ -204,7 +225,7 @@ export default function Home() {
         <section className="community-section" id="comunidad">
           <div className="community-image-wrap"><img src={COMMUNITY_IMAGE} alt="Comunidad de skaters y artistas reunida en una rampa al atardecer" /></div>
           <div className="community-copy">
-            <div className="section-kicker light-kicker"><span>06</span><span>Comunidad / Brand Journalism</span></div>
+            <div className="section-kicker light-kicker"><span>07</span><span>Comunidad / Brand Journalism</span></div>
             <h2>No sólo contar<br />qué vendes.<br /><em>Contar por qué importa.</em></h2>
             <p>El Brand Journalism crea valor cuando la marca informa, documenta, contextualiza y abre conversación. En Vans, la historia del producto puede convivir con historias de skate, procesos creativos, música, arte, cuidado y consumo responsable.</p>
             <div className="ratio-note"><strong>80 / 20</strong><span>Una guía editorial: 80% comunidad y 20% promoción.</span></div>
@@ -212,7 +233,7 @@ export default function Home() {
         </section>
 
         <section className="participation-section section-pad" id="participa">
-          <div className="section-kicker"><span>07</span><span>Call to action / participación</span></div>
+          <div className="section-kicker"><span>08</span><span>Call to action / participación</span></div>
           <div className="participation-grid">
             <div>
               <h2>La conversación<br /><em>también es contenido.</em></h2>
@@ -237,7 +258,7 @@ export default function Home() {
         <section className="purchase-section" id="compra">
           <div className="purchase-inner">
             <div>
-              <p className="eyebrow light">08 / Consulta oficial</p>
+              <p className="eyebrow light">09 / Consulta oficial</p>
               <h2>Encuentra tu siguiente par.</h2>
               <p>Consulta catálogo, tallas, disponibilidad, envíos y políticas directamente en Vans México.</p>
             </div>
