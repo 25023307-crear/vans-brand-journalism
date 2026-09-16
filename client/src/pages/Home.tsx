@@ -16,12 +16,12 @@ import {
   X,
 } from "lucide-react";
 
-const HERO_IMAGE = "/manus-storage/vans-hero_8f1f692a.jpg";
-const PROCESS_IMAGE = "/manus-storage/vans-process_326528e9.jpg";
-const COMMUNITY_IMAGE = "/manus-storage/vans-community_27bae507.jpg";
-const USER_STORE_FRONT = "/manus-storage/store-front_a6c55546.jpg";
-const USER_STORE_DISPLAY = "/manus-storage/store-display_a317bf8c.jpg";
-const USER_STORE_VISIT = "/manus-storage/store-visit_5e6013d5.jpg";
+const HERO_IMAGE = `${import.meta.env.BASE_URL}images/vans-hero.jpg`;
+const PROCESS_IMAGE = `${import.meta.env.BASE_URL}images/vans-process.jpg`;
+const COMMUNITY_IMAGE = `${import.meta.env.BASE_URL}images/vans-community.jpg`;
+const USER_STORE_FRONT = `${import.meta.env.BASE_URL}images/store-front.jpg`;
+const USER_STORE_DISPLAY = `${import.meta.env.BASE_URL}images/store-display.jpg`;
+const USER_STORE_VISIT = `${import.meta.env.BASE_URL}images/store-visit.jpg`;
 
 const sourceLinks = [
   {
